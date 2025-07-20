@@ -6,42 +6,24 @@
 
 Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
 
-# Features
+# Raj's Portfolio
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+> 19 and doing my best
 
-# Getting Started Locally
+## About
 
-1. Clone this repository to your local machine:
+Full-stack developer building [Srible](https://srible.com) - a minimal blogging platform.
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## Stack
 
-2. Move to the cloned directory
+- **Frontend**: Next.js, TypeScript, Tailwind
+- **Backend**: Node.js, Rust
+- **Tools**: Git, Vercel
 
-   ```bash
-   cd portfolio
-   ```
+## Contact
 
-3. Install dependencies:
+- [X](https://x.com/kazedevs) / [GitHub](https://github.com/kazedevs) / [Email](mailto:kazed4v@proton.me)
 
-   ```bash
-   pnpm install
-   ```
+---
 
-4. Start the local Server:
-
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
-
-# License
-
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+> MIT License
