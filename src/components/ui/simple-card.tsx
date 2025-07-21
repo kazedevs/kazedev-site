@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface SimpleCardProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -25,9 +26,11 @@ export function SimpleCard({
         {icon && (
           <div className="mb-4">
             {typeof icon === 'string' && icon.startsWith('/') ? (
-              <img 
+              <Image 
                 src={icon} 
                 alt={title || 'Project icon'} 
+                width={48}
+                height={48}
                 className="h-12 w-12 object-contain"
               />
             ) : (
