@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { SolanaDonation } from "@/components/solana-donation";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -127,6 +128,9 @@ export default function Page() {
               />
             </BlurFade>
           ))}
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <SolanaDonation />
+          </BlurFade>
         </div>
       </section>
       <section id="skills">

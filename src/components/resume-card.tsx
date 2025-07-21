@@ -75,7 +75,7 @@ export const ResumeCard = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                    "size-4 transition-transform",
                     isExpanded ? "rotate-90" : "rotate-0"
                   )}
                 />
@@ -87,21 +87,15 @@ export const ResumeCard = ({
             {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
           </CardHeader>
           {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
+            <div
+              style={{
+                display: isExpanded ? 'block' : 'none',
                 opacity: isExpanded ? 1 : 0,
-
-                height: isExpanded ? "auto" : 0,
               }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-2 text-xs sm:text-sm"
+              className="text-sm [&_p]:relative [&_p]:-left-0.5 [&_p]:text-ellipsis [&_p]:text-pretty [&_p]:leading-normal [&_p]:text-muted-foreground/90"
             >
               {description}
-            </motion.div>
+            </div>
           )}
         </div>
       </Card>

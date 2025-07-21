@@ -13,7 +13,7 @@ export const DATA = {
     <p>and Sometimes I read books</p>
   `,
   avatarUrl: "/pfp.jpeg",
-  skills: ["React", "Next.js", "Typescript", "Node.js", "Go", "Java", "Python"],
+  skills: ["React", "Next.js", "Typescript", "Node/Express.js", "Go", "Java", "Python"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },

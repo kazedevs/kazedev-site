@@ -52,8 +52,8 @@ export function SimpleCard({
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          "rounded-xl border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md",
-          "flex flex-col h-full hover:border-primary/50 cursor-pointer",
+          "rounded-xl border bg-card text-card-foreground shadow-sm",
+          "flex flex-col h-full cursor-pointer",
           className
         )}
       >
@@ -65,7 +65,7 @@ export function SimpleCard({
   return (
     <div
       className={cn(
-        "rounded-xl border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md",
+        "rounded-xl border bg-card text-card-foreground shadow-sm",
         "flex flex-col h-full",
         className
       )}
