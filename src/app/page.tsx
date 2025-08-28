@@ -74,40 +74,8 @@ export default function Page() {
           ))}
         </div>
       </section>
-      <section id="building" className="space-y-4">
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <h2 className="text-xl font-bold">Building</h2>
-        </BlurFade>
-        <div className="grid gap-4 md:grid-cols-2">
-          {DATA.building.map((project, i) => (
-            <BlurFade key={i} delay={BLUR_FADE_DELAY * 6 + i * 0.05}>
-              <SimpleCard
-                title={project.title}
-                description={project.description}
-                icon={project.icon}
-                href={project.href}
-                footer={
-                  <div className="flex flex-col gap-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-xs font-medium text-muted-foreground">
-                        Status: {project.status}
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.map((tech, i) => (
-                        <span key={i} className="text-xs px-2 py-1 bg-muted rounded-md">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                }
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
-      <section id="education">
+     
+{/*       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
@@ -146,7 +114,7 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
